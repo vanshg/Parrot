@@ -58,6 +58,7 @@ public class MessageListViewController: NSWindowController, TextInputHost, ListV
 	
 	@IBOutlet var listView: ListView!
 	@IBOutlet var indicator: NSProgressIndicator!
+	@IBOutlet var statusView: NSTextField!
     @IBOutlet var moduleView: NSView!
     @IBOutlet var placeholderView: NSView!
     @IBOutlet var settingsPopover: NSPopover!
@@ -99,6 +100,14 @@ public class MessageListViewController: NSWindowController, TextInputHost, ListV
 	
 	var _previews = [String: [LinkPreviewType]]()
 	var _note: NSObjectProtocol!
+	lazy var popover: NSPopover = {
+		let p = NSPopover()
+		let v = NSViewController()
+		v.view = self.statusView!
+		p.contentViewController = v
+		p.behavior = .applicationDefined
+		return p
+	}()
     
 	private var dataSource: [EventStreamItem] = []
     public func numberOfItems(in: ListView) -> [UInt] {

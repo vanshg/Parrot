@@ -30,6 +30,9 @@ public enum Parrot {
 public class ParrotAppController: NSApplicationController {
 	
     private var bleh: Any? = nil
+    private lazy var statusItem: NSStatusItem = {
+        NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    }()
     
 	/// Lazy-init for the main conversations NSWindowController.
 	private lazy var conversationsController: NSWindowController = {
@@ -133,7 +136,28 @@ public class ParrotAppController: NSApplicationController {
                 }
             }
         }
+        
+
+        let icon = NSImage(named: "readStatusIcon")
+        icon?.isTemplate = true // best for dark mode
+        statusItem.image = icon
+        statusItem.button?.target = self
+        statusItem.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
+        statusItem.button?.action = #selector(self.showConversationWindow(sender:))
     }
+    
+    func showConversationWindow(sender: NSStatusBarButton?) {
+        let event = NSApp.currentEvent!
+        if event.type == NSEventType.rightMouseUp {
+            NSApplication.shared().terminate(self)
+        } else {
+            DispatchQueue.main.async {
+                self.conversationsController.showWindow(nil)
+            }
+        }
+    }
+    
+    
     let net = NetworkReachabilityManager(host: "google.com")
     
     /// If the Conversations window is closed, tapping the dock icon will reopen it.

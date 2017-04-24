@@ -46,7 +46,6 @@
 		48403CA11DF0B9930009897A /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48403CA01DF0B9930009897A /* Changeset.swift */; };
 		48403CA31DF0BF6B0009897A /* Interpolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48403CA21DF0BF6B0009897A /* Interpolate.swift */; };
 		484E8CA01D37FF2500E1D1D5 /* EventStreamItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E8C9F1D37FF2500E1D1D5 /* EventStreamItems.swift */; };
-		4871C50A1E20EE7C00A24A08 /* ContentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871C5091E20EE7C00A24A08 /* ContentWindow.swift */; };
 		4871ED781DE013A900FD8509 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835ECAE1C1C620E00193EBC /* Authenticator.swift */; };
 		48808EDD1C6463DD00236E96 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48808EDC1C6463DD00236E96 /* PreferencesViewController.swift */; };
 		488201BC1D4A970400C545F0 /* PersonaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488201BB1D4A970400C545F0 /* PersonaImage.swift */; };
@@ -333,7 +332,6 @@
 		486A2B791C1F421500569457 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		486A2B7A1C1F422100569457 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		486E7DED1DA8556300C1953B /* Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
-		4871C5091E20EE7C00A24A08 /* ContentWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentWindow.swift; sourceTree = "<group>"; };
 		48808EDC1C6463DD00236E96 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		488201B51D4A962B00C545F0 /* NSExtendedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSExtendedTextView.swift; sourceTree = "<group>"; };
 		488201B71D4A968F00C545F0 /* NSAntiScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAntiScrollView.swift; sourceTree = "<group>"; };
@@ -833,7 +831,6 @@
 				48403CA21DF0BF6B0009897A /* Interpolate.swift */,
 				489C8D5C1DF40012007B3392 /* Interpolate+Interpolatable.swift */,
 				489C8D5A1DF3FFF1007B3392 /* Interpolate+Interpolators.swift */,
-				4871C5091E20EE7C00A24A08 /* ContentWindow.swift */,
 				48D3CD081DE944C2003D6C02 /* Supporting Files */,
 			);
 			path = MochaUI;
@@ -1191,20 +1188,20 @@
 				TargetAttributes = {
 					480363991C1D08490008E9F5 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						DevelopmentTeamName = "Aditya Vaidyam (Personal Team)";
 						LastSwiftMigration = 0810;
 					};
 					481300431D26BD4900768D79 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						DevelopmentTeamName = "Aditya Vaidyam (Personal Team)";
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					48834D911C1B3602009BC442 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						DevelopmentTeamName = "Aditya Vaidyam (Personal Team)";
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
@@ -1225,7 +1222,7 @@
 					};
 					48834E101C1B38B9009BC442 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						DevelopmentTeamName = "Aditya Vaidyam (Personal Team)";
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
@@ -1247,7 +1244,7 @@
 					};
 					48DE52C71C1CC12900647C63 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1261,7 +1258,7 @@
 					};
 					48DE52DB1C1CC1D300647C63 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1275,7 +1272,7 @@
 					};
 					48DE52EF1C1CC28000647C63 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2754ZHC8VE;
+						DevelopmentTeam = DU7NX744DX;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1497,7 +1494,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D3CD171DE945C1003D6C02 /* NSAntiScrollView.swift in Sources */,
-				4871C50A1E20EE7C00A24A08 /* ContentWindow.swift in Sources */,
 				48D3CD211DE94C71003D6C02 /* Mocha+Bridge.swift in Sources */,
 				48D3CD161DE945C1003D6C02 /* NSExtendedTextView.swift in Sources */,
 				48D3CD0D1DE945C1003D6C02 /* AppKit+Extensions.swift in Sources */,
@@ -1628,6 +1624,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-lncurses",
@@ -1644,6 +1641,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-lncurses",
@@ -1667,6 +1665,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1697,6 +1696,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1810,6 +1810,7 @@
 				CODE_SIGN_ENTITLEMENTS = Parrot/Parrot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -1831,6 +1832,7 @@
 				CODE_SIGN_ENTITLEMENTS = Parrot/Parrot.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -1931,6 +1933,7 @@
 				CODE_SIGN_ENTITLEMENTS = parrotd/parrotd.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = parrotd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.parrotd;
@@ -1947,6 +1950,7 @@
 				CODE_SIGN_ENTITLEMENTS = parrotd/parrotd.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = parrotd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.parrotd;
@@ -2084,6 +2088,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotShare;
@@ -2102,6 +2107,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotShare;
@@ -2121,6 +2127,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotLink;
@@ -2139,6 +2146,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotLink;
@@ -2158,6 +2166,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotToday;
@@ -2176,6 +2185,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DU7NX744DX;
 				INFOPLIST_FILE = ParrotToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avaidyam.Parrot.ParrotToday;
