@@ -153,6 +153,7 @@ public class ParrotAppController: NSApplicationController {
         } else {
             DispatchQueue.main.async {
                 self.conversationsController.showWindow(nil)
+                NSApp.activate(ignoringOtherApps: true)
             }
         }
     }
@@ -229,7 +230,7 @@ public class ParrotAppController: NSApplicationController {
 			}
 		}
 		WebDelegate.delegate.authenticationTokens = nil
-		NSApplication.shared().terminate(self)
+        NSApp.terminate(self)
 	}
 	
     ///
