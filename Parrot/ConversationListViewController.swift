@@ -168,7 +168,7 @@ ListViewDataDelegate, ListViewSelectionDelegate, ListViewScrollbackDelegate, NSW
 		}
 		
 		let unread = self.sortedConversations.map { $0.unreadCount }.reduce(0, +)
-		NSApp.badgeCount = UInt(unread)
+        self.setUnread(count: unread)
 		
 		NotificationCenter.default.addObserver(forName: NSUserNotification.didActivateNotification) {
 			guard	let notification = $0.object as? NSUserNotification,
@@ -196,6 +196,12 @@ ListViewDataDelegate, ListViewSelectionDelegate, ListViewScrollbackDelegate, NSW
 			return pb
 		}*/
 	}
+    
+    private func setUnread(count: Int) {
+        NSApp.badgeCount = UInt(count)
+        (NSApp.delegate as! ParrotAppController).updateMenuBarIcon(hasUnread: count != 0)
+
+    }
 	
 	private func showConversation(_ conv: Conversation) {
 		if let wc = self.childConversations[conv.identifier] {
@@ -436,7 +442,7 @@ ListViewDataDelegate, ListViewSelectionDelegate, ListViewScrollbackDelegate, NSW
             //self.listView.dataSource = self.sortedConversations.map { Wrapper.init($0) }
             self.listView.update()
             let unread = self.sortedConversations.map { $0.unreadCount }.reduce(0, +)
-            NSApp.badgeCount = UInt(unread)
+            self.setUnread(count: unread)
             self.updateSelectionIndexes()
         }
     }

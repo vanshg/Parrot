@@ -29,6 +29,7 @@ public enum Parrot {
 @NSApplicationMain
 public class ParrotAppController: NSApplicationController {
 	
+//    private var unreadCount = 1
     private var bleh: Any? = nil
     private lazy var statusItem: NSStatusItem = {
         NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
@@ -94,27 +95,7 @@ public class ParrotAppController: NSApplicationController {
                             //AppActivity.end("Setup")
                         }
                     }
-                    
-                    /*DispatchQueue.main.async {
-                        let a = NSAlert()
-                        a.alertStyle = .critical
-                        a.messageText = "Parrot has connected."
-                        a.runModal()
-                    }*/
-                    //UserNotification(identifier: "Parrot.ConnectionStatus", title: "Parrot has connected.",
-                    //                 contentImage: NSImage(named: NSImageNameCaution)).post()
 			}
-            NotificationCenter.default
-                .addObserver(forName: Client.didDisconnectNotification, object: c, queue: nil) { _ in
-                    DispatchQueue.main.async {
-                        let a = NSAlert()
-                        a.alertStyle = .critical
-                        a.messageText = "Parrot has disconnected."
-                        a.runModal()
-                    }
-                    //UserNotification(identifier: "Parrot.ConnectionStatus", title: "Parrot has disconnected.",
-                    //                 contentImage: NSImage(named: NSImageNameCaution)).post()
-            }
             
             ServiceRegistry.add(service: c)
             self.net?.startListening()
@@ -137,13 +118,12 @@ public class ParrotAppController: NSApplicationController {
             }
         }
         
-
-        let icon = NSImage(named: "readStatusIcon")
-        icon?.isTemplate = true // best for dark mode
-        statusItem.image = icon
         statusItem.button?.target = self
         statusItem.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
         statusItem.button?.action = #selector(self.showConversationWindow(sender:))
+        let icon = #imageLiteral(resourceName: "readStatusIcon")
+        icon.isTemplate = true
+        statusItem.image = icon
     }
     
     func showConversationWindow(sender: NSStatusBarButton?) {
@@ -156,6 +136,13 @@ public class ParrotAppController: NSApplicationController {
                 NSApp.activate(ignoringOtherApps: true)
             }
         }
+    }
+    
+    public func updateMenuBarIcon(hasUnread: Bool) {
+        let icon = hasUnread ? #imageLiteral(resourceName: "unreadStatusIcon") : #imageLiteral(resourceName: "readStatusIcon")
+        icon.isTemplate = true // best for dark mode
+        statusItem.image = icon
+//        log.info("COMMIT EDITING WAS \(result)")
     }
     
     
